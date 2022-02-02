@@ -1,0 +1,13 @@
+/* This stylesheet contains styles for the footer only
+for general style see app.css
+*/
+
+footer {
+    display: flex;
+    font-weight: bold;
+    padding: 20px;
+}
+
+footer a {
+    color: var(--donutland-pink);
+}

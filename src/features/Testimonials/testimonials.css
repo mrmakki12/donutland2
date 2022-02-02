@@ -1,0 +1,61 @@
+/* This stylesheet pertains to testimonial section
+of the page for general styles check app.css
+*/
+
+/* Container */
+.testimonials-container.container {
+    flex-direction: column;
+}
+
+/* testimonials */
+.testimonials {
+    display: flex;
+    height: 85%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+}
+
+.testi-name-img {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--donutland-purple);
+    font-size: 1.25rem;
+}
+
+.testi-name-img img {
+    height: 125px;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    border: 5px solid var(--donutland-purple);
+}
+
+/* Queries */
+@media screen and (max-width: 1200px) {
+    /*Container */
+    .testimonials-container.container {
+        height: fit-content;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    /* Testimonies */
+    .testimonial,
+    .title {
+        margin-bottom: 50px;
+    }
+}

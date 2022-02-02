@@ -1,0 +1,101 @@
+/* this stylesheet deals with elements 
+specific to the donut section of the page
+for general styles see app.css
+*/
+
+/* donut container */
+.donuts-container.container,
+.donut,
+.donut-img-name {
+    flex-direction: column;
+}
+
+.donuts-wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.donuts,
+.donut,
+.donut-img-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.donuts {
+    overflow-x: scroll;
+    padding: 25px;
+    width: 85%;
+    /* height: 425px; */
+}
+
+/* donut */
+.donut {
+    height: 450px;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 50px;
+}
+
+.donut-img-name {
+    padding: 20px;
+    color: var(--donutland-pink);
+    border: 10px solid var(--donutland-pink);
+}
+
+.donut-img-name img {
+    height: 150px;
+    width: 150px;
+ 
+}
+
+/* Scroll buttons */
+.donuts::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll {
+    height: 40px;
+    width: 40px;
+    background-color: var(--donutland-pink);
+}
+
+/* Add to cart */
+.addToCartBtn {
+    background-color: var(--donutland-pink);
+    margin-top: 10px;
+}
+
+.scroll,
+.addToCartBtn {
+    transition: all ease-in-out 0.3s;
+}
+
+.scroll:hover,
+.addToCartBtn:hover {
+    background-color: var(--donutland-purple);
+    border-radius: 10px;
+}
+
+/* Queries */
+
+@media screen and (hover: none) {
+    /* touch screen devices don't need scroll buttons */
+    .scroll {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* Containers */
+    .donuts-container.container {
+        padding: 10px;
+    }
+
+    .donuts {
+        width: 90%;
+    }
+}

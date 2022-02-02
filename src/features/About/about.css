@@ -1,0 +1,63 @@
+/* This stylesheet contains styles applicable 
+to about section of the page for general styles applying 
+to all sections see app.css
+*/
+
+/* Containers */
+.store-front,
+.about-contact {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about, 
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30%;
+    width: 85%;
+}
+
+/* Store front */
+.store-front img {
+    max-height: 704px;
+    max-width: 470px;
+    width: auto;
+    height: auto;
+    box-shadow: -30px 30px var(--donutland-pink);
+}
+
+/* Queries */
+@media screen and (max-width: 1200px) {
+    /* Containers */
+    .about-info.container {
+        flex-direction: column;
+        height: fit-content;
+        padding: 10px;
+        align-items: center;
+    }
+    
+    .store-front {
+        margin: 50px 0;
+    }
+
+    .about, .contact {
+        margin-bottom: 50px;
+    }
+
+    .store-front,
+    .about-contact {
+        width: 85%;
+    }
+
+    /* image */
+    .store-front img {
+        max-height: 350px;
+        max-width: 275px;
+    }
+
+}

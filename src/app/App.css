@@ -1,0 +1,60 @@
+/* This stylesheet contain styles pertaining to 
+all components for component specific styles head to 
+features directory */
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+}
+
+button:focus,
+button:hover{
+  outline:none;
+  cursor: pointer;
+}
+
+h1, 
+h2,
+h3 {
+  font-weight: bold;
+  color: var(--donutland-pink);
+}
+
+/* Custom colors and other common attributes */
+:root {
+  --donutland-pink: #fc5fe4;
+  --donutland-purple: #bb00e5;
+}
+
+/* Body scroll */
+body::-webkit-scrollbar {
+  width: 0.7em;
+  background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--donutland-purple);
+  height:30px;
+}
+
+/* Containers */
+.container {
+  padding: 100px;
+  height: 100vh;
+  display: flex;
+}

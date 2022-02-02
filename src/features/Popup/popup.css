@@ -1,0 +1,39 @@
+/* This stylesheet pertains to elements 
+on the order complete popup for general 
+styles applying to all element check app.css
+*/
+
+/* Container */
+.popup-container {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+    width: 50vw;
+    text-align: center;
+    background-color: white;
+    border: 3px solid var(--donutland-purple);
+    padding: 25px;
+}
+
+/* Header */
+.complete-header {
+    font-size: 3rem;
+}
+
+/* Queries */
+@media screen and (max-width: 850px) {
+    /* Container */
+    .popup-container {
+        width: 80vw;
+        left: 10%;
+    }
+
+    /* Header */
+    .complete-header {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,59 @@
+/* this stylesheet contains style for landing 
+component elements only see app.css for styles 
+that apply to all components
+*/
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: center;
+    background: var(--donutland-pink);
+    font-weight: bold;
+    width: 100%;
+    position: absolute;
+}
+
+nav li {
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    transition: all ease-in-out 0.3s;
+}
+
+nav li:hover {
+    color: var(--donutland-pink);
+    background: white;
+    border-radius: 10px;
+}
+
+/* Donutland text */
+.landing-h1 {
+    font-size: 4rem;
+    color: white;
+    position:absolute;
+    top: 65px;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.landing-h1 h1 {
+    color: white;
+    height: fit-content;
+    width: fit-content;
+}
+
+span {
+    color: var(--donutland-purple);
+    /* -webkit-text-stroke: 3px white; */
+}
+
+@media screen and (max-width: 575px) {
+    .landing-h1 {
+        font-size: 2.50rem;
+        /* left: calc(50% - 150px); */
+    }
+}
